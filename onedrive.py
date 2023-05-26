@@ -29,7 +29,7 @@ async def getUrl(headers, file_id):
     # }, headers=headers)
 
     try:
-        # print("上传成功")
+        print("上传成功")
         return r.json()['link']['webUrl'] + '?download=1'
     except Exception as e:
         print('发生错误.........')
